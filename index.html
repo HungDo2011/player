@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="./accsets/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+          <!-- Header -->
+          <header>
+            <h4>Now playing:</h4>
+            <h2>String 57th & 9th</h2>
+          </header>
+      
+          <!-- CD -->
+          <div class="cd">
+            <div class="cd-thumb" style="background-image: url('https://tse1.mm.bing.net/th?id=OIP.cNiCe88sYx3VyKq_NtKRIQHaHa&pid=Api')">
+            </div>
+          </div>
+      
+          <!-- Control -->
+          <div class="control">
+            <div class="btn btn-repeat">
+              <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class="fa-solid fa-backward-fast"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class="fa-solid fa-pause"></i>
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="btn btn-next">
+              <i class="fa-solid fa-forward-fast"></i>
+            </div>
+            <div class="btn btn-random">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+          </div>
+          
+          <div class="bar-time">
+            <!-- <input type="time" value="00:00"> -->
+            
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            
+            <!-- <span class="duration-time">00:00</span> -->
+          </div>
+      
+          <audio id="audio" src=""></audio>
+        </div>
+      
+        <!-- Playlist -->
+        <div class="playlist">
+          <div class="song">
+            <div class="thumb" style="background-image: url('')"></div>
+            <div class="body">
+              <h3 class="title"></h3>
+              <p class="author"></p>
+            </div>
+            <div class="option">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+        </div>    
+      </div>
+
+      <script src="./accsets/javasript/index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
